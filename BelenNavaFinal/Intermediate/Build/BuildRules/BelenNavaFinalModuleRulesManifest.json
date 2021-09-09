@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\belen\\Documents\\Unreal Projects\\BelenNavaFinal\\Source\\BelenNavaFinal\\BelenNavaFinal.Build.cs",
+		"C:\\Users\\belen\\Documents\\Unreal Projects\\BelenNavaFinal\\Source\\BelenNavaFinal.Target.cs",
+		"C:\\Users\\belen\\Documents\\Unreal Projects\\BelenNavaFinal\\Source\\BelenNavaFinalEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.2"
+}

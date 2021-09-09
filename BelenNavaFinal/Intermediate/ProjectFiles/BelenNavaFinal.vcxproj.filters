@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\BelenNavaFinal.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C70DBFD3-FF33-444E-86E7-A7178BE07B80}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BelenNavaFinal.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\BelenNavaFinalEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{231D1BC7-00E8-4281-BAC5-63DF335D1113}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\BelenNavaFinal">
+      <UniqueIdentifier>{666D1CC7-1DD8-4D88-8D9E-976AD9DB648F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\BelenNavaFinal\BelenNavaFinal.Build.cs">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\BelenNavaFinal\BelenNavaFinal.cpp">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BelenNavaFinal\BelenNavaFinal.h">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BelenNavaFinal\PlayerCharacter.cpp">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BelenNavaFinal\PlayerCharacter.h">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
