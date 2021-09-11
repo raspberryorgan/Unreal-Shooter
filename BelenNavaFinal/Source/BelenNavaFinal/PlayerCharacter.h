@@ -31,7 +31,14 @@ public:
 
 	void Front(float v);
 	void Right(float h);
+	void OnJumpPlayer();
+	void OnEndPlayerJump();
 
 	void RotateX(float r);
 	void RotateY(float r);
+
+	void OnFire();
+
+	FHitResult GetFirstPhysicBodyToReach();;
+
 };

@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-BelenNavaFinal-3226.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\BelenNavaFinal.cpp.obj"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\PlayerCharacter.cpp.obj"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\BelenNavaFinal.init.gen.cpp.obj"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\PlayerCharacter.gen.cpp.obj"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\Default.rc2.res"
+/OUT:"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\UE4Editor-BelenNavaFinal-3226.lib"
+/INCLUDE:IMPLEMENT_MODULE_BelenNavaFinal

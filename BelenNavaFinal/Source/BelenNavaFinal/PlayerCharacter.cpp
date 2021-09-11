@@ -36,16 +36,19 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	PlayerInputComponent->BindAxis("RotateX", this, &APlayerCharacter::RotateX);
 	PlayerInputComponent->BindAxis("RotateY", this, &APlayerCharacter::RotateY);
 
+
+		PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &APlayerCharacter::OnJumpPlayer);
+		PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &APlayerCharacter::OnFire);
 }
 
 	void APlayerCharacter::Front(float v)
 	{
-		AddMovementInput(GetActorForwardVector(), v);
+		AddMovementInput(GetActorForwardVector(), -v);
 	}
 
 	void APlayerCharacter::Right(float h)
 	{
-		AddMovementInput(GetActorRightVector(), h);
+		AddMovementInput(GetActorRightVector(), -h);
 	}
 
 	void APlayerCharacter::RotateX(float r)
@@ -54,8 +57,69 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	}
 	void APlayerCharacter::RotateY(float r)
 	{
-		AddControllerRollInput(r);
+		AddControllerPitchInput(r);
+	}
+
+	void APlayerCharacter::OnJumpPlayer()
+	{
+		Jump();
 	}
 
 
+	FHitResult APlayerCharacter::GetFirstPhysicBodyToReach()
+	{
+		FVector viewPosition;
+		FRotator viewRotation;
+
+		GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+			OUT viewPosition,
+			OUT viewRotation
+		);
+		FVector lineTraceEnd = viewPosition + viewRotation.Vector() * 5000000000000.f;
+		FHitResult hitResult;
+		FCollisionQueryParams queryParams = FCollisionQueryParams(
+			FName(TEXT("")),
+			false,
+			GetOwner()
+		);
+
+		GetWorld()->LineTraceSingleByObjectType(
+			OUT hitResult,
+			viewPosition,
+			lineTraceEnd,
+			FCollisionObjectQueryParams(ECollisionChannel::ECC_PhysicsBody),
+			queryParams
+		);
+
+		// Obtener que está mirando
+		AActor* hitActor = hitResult.GetActor();
+		
+		if (hitActor)
+		{
+			FString actorName = hitActor->GetName();
+			UE_LOG(LogTemp, Warning, TEXT("Actor name: %s"), *actorName);
+		}
+		
+
+		return hitResult;
+	}
+
+
+
+	void APlayerCharacter:: OnFire() {
+		UE_LOG(LogTemp, Warning, TEXT("Shoot"));
+
+		auto hitResult = GetFirstPhysicBodyToReach();
+		auto componentToGrab = hitResult.GetComponent();
+		auto actor = hitResult.GetActor();
+
+		if (actor)
+		{
+			//Shoot
+			//Cast to an enemy, if is correct we hit an enemy
+			//The enemy needs physics
+			FString actorName = actor->GetName();
+			UE_LOG(LogTemp, Warning, TEXT("Actor name: %s"), *actorName);
+		}
+	}
 
