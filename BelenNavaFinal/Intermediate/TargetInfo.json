@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "BelenNavaFinal",
-			"Path": "C:\\Users\\belen\\Documents\\Unreal Projects\\BelenNavaFinal\\Source\\BelenNavaFinal.Target.cs",
+			"Path": "D:\\Documentos\\5to cuatrimeste\\Unreal-Shooter\\BelenNavaFinal\\Source\\BelenNavaFinal.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "BelenNavaFinalEditor",
-			"Path": "C:\\Users\\belen\\Documents\\Unreal Projects\\BelenNavaFinal\\Source\\BelenNavaFinalEditor.Target.cs",
+			"Path": "D:\\Documentos\\5to cuatrimeste\\Unreal-Shooter\\BelenNavaFinal\\Source\\BelenNavaFinalEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
