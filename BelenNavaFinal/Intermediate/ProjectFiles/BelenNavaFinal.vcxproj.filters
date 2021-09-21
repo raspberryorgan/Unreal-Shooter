@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BelenNavaFinal.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{77928636-CDEF-45BE-A13C-D51F23E57042}</UniqueIdentifier>
+      <UniqueIdentifier>{116C96F0-C289-4B52-A6AA-2993A9B91F40}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BelenNavaFinal.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{1A4E92DC-5321-4353-9CA8-D9526AAF6547}</UniqueIdentifier>
+      <UniqueIdentifier>{3416A3F1-E096-43CB-B6EF-E60EE34257DE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BelenNavaFinal">
-      <UniqueIdentifier>{E152BF80-414A-418B-BA85-1E1368EE1BD8}</UniqueIdentifier>
+      <UniqueIdentifier>{EC68601F-C9FD-49EF-A004-42B2EBE9DADD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BelenNavaFinal\BelenNavaFinal.Build.cs">
       <Filter>Source\BelenNavaFinal</Filter>
@@ -54,6 +54,12 @@
       <Filter>Source\BelenNavaFinal</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BelenNavaFinal\MyPlayerController.h">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BelenNavaFinal\PlayerBullet.cpp">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BelenNavaFinal\PlayerBullet.h">
       <Filter>Source\BelenNavaFinal</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\BelenNavaFinal\PlayerCharacter.cpp">

@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "PlayerBullet.h"
+#include "Components/SceneComponent.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -40,5 +42,11 @@ public:
 	void OnFire();
 
 	FHitResult GetFirstPhysicBodyToReach();;
+
+	UPROPERTY(EditAnywhere)
+		UStaticMesh* gun;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class APlayerBullet> bulletPrefab;
 
 };

@@ -106,8 +106,19 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 
 
-	void APlayerCharacter:: OnFire() {
+	void APlayerCharacter::OnFire() {
 		UE_LOG(LogTemp, Warning, TEXT("Shoot"));
+		FTransform tr; 
+
+		TArray<UStaticMeshComponent*> children;
+		GetComponents<UStaticMeshComponent>(children);
+
+		FVector Location = children[1]->GetSocketLocation("GunSocket");
+		FRotator Rotation(0.0f, 0.0f, 0.0f);
+		FActorSpawnParameters SpawnInfo;
+
+		GetWorld()->SpawnActor<APlayerBullet>(bulletPrefab,Location, Rotation, SpawnInfo);
+
 
 		auto hitResult = GetFirstPhysicBodyToReach();
 		auto componentToGrab = hitResult.GetComponent();
@@ -115,7 +126,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		if (actor)
 		{
-			//Shoot
+			AActor* enemy;
+			AShootingNPC* myEnemy = Cast<AShootingNPC>(enemy);
+
 			//Cast to an enemy, if is correct we hit an enemy
 			//The enemy needs physics
 			FString actorName = actor->GetName();
