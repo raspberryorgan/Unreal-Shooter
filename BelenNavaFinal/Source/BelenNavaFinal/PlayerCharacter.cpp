@@ -16,6 +16,8 @@ APlayerCharacter::APlayerCharacter()
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	life = 100;
 	
 }
 
@@ -98,9 +100,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		{
 			FString actorName = hitActor->GetName();
 			UE_LOG(LogTemp, Warning, TEXT("Actor name: %s"), *actorName);
+
 		}
 		
-
 		return hitResult;
 	}
 
@@ -126,13 +128,22 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		if (actor)
 		{
-			AActor* enemy;
-			AShootingNPC* myEnemy = Cast<AShootingNPC>(enemy);
 
 			//Cast to an enemy, if is correct we hit an enemy
 			//The enemy needs physics
 			FString actorName = actor->GetName();
 			UE_LOG(LogTemp, Warning, TEXT("Actor name: %s"), *actorName);
+			AShootingNPC* npc = Cast<AShootingNPC>(actor);
+			npc->npcLife -= 10;
+			if (npc->npcLife <= 0) {
+				actor->Destroy();
+			}
 		}
+	}
+
+	void APlayerCharacter::OnDamage() {
+		life -= 5;
+		AMyPlayerController* controller = Cast<AMyPlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
+		controller->gameWidget->life = life;
 	}
 

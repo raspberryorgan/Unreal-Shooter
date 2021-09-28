@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "PlayerBullet.h"
 #include "Components/SceneComponent.h"
+#include "ShootingNPC.h"
+#include "MyPlayerController.h"
 #include "PlayerCharacter.generated.h"
 
 UCLASS()
@@ -48,5 +50,12 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class APlayerBullet> bulletPrefab;
+
+	UFUNCTION(BlueprintCallable)
+		void OnDamage();
+
+	float life;
+	UPROPERTY(EditAnywhere)
+		float damage;
 
 };

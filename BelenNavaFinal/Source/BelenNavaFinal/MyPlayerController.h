@@ -36,5 +36,8 @@ public:
 		FString currentLevelName;
 
 	void virtual BeginPlay() override;
+
+public:
+	float life;
 	
 };

@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeBelenNavaFinal_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x550E7759,
-				0xECA0F1E4,
+				0xF3B6523C,
+				0x2206980F,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

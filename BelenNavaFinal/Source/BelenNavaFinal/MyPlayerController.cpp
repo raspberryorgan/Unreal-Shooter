@@ -4,7 +4,7 @@
 
 void AMyPlayerController::BeginPlay() {
 	Super::BeginPlay();
-
+	life = 100;
 	UWorld* MyWorld = GetWorld();
 	currentLevelName = MyWorld->GetMapName();
 
@@ -21,6 +21,7 @@ void AMyPlayerController::BeginPlay() {
 
 		if (gameWidget) {
 			gameWidget->AddToViewport();
+			gameWidget->life = life;
 		}
 	}
 	

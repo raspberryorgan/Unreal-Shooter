@@ -26,7 +26,7 @@ void APlayerBullet::BeginPlay()
 void APlayerBullet::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	FVector Location = GetActorLocation() + GetActorForwardVector();
+	FVector Location = GetActorLocation() + GetActorForwardVector() * speed;
 	SetActorLocation(Location, false);
 
 	

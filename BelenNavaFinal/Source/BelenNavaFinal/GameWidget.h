@@ -13,5 +13,9 @@ UCLASS()
 class BELENNAVAFINAL_API UGameWidget : public UUserWidget
 {
 	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int life;
 	
 };
