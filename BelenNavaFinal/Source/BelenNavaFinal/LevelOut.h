@@ -25,11 +25,14 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere)
-	AActor* player;
+	UPROPERTY(BlueprintReadWrite)
+	AActor* playerActor;
 
+	UPROPERTY(EditAnywhere)
 	UBoxComponent* volume;
 
-	void OnOverlap();
+	UFUNCTION()
+	void OnOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	void OnExitOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 };

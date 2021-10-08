@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeBelenNavaFinal_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF2266074,
+				0x507098D0,
 				0x6F830095,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -54,7 +54,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void OnDamage();
 
+	UPROPERTY(BlueprintReadWrite)
 	float life;
+
 	UPROPERTY(EditAnywhere)
 		float damage;
 

@@ -4,9 +4,11 @@
 
 void AMyPlayerController::BeginPlay() {
 	Super::BeginPlay();
-	life = 100;
+
+
 	UWorld* MyWorld = GetWorld();
 	currentLevelName = MyWorld->GetMapName();
+
 
 	if (currentLevelName == mainmenuname) {
 		menuwidget = CreateWidget< UMainMenu>(this, menucanvasprefab);
@@ -21,7 +23,13 @@ void AMyPlayerController::BeginPlay() {
 
 		if (gameWidget) {
 			gameWidget->AddToViewport();
-			gameWidget->life = life;
+		}
+	}
+	if (currentLevelName == level2name) {
+		gameWidget = CreateWidget< UGameWidget>(this, gamecanvasprefab);
+
+		if (gameWidget) {
+			gameWidget->AddToViewport();
 		}
 	}
 	

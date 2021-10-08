@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef BELENNAVAFINAL_LevelOut_generated_h
 #error "LevelOut.generated.h already included, missing '#pragma once' in LevelOut.h"
 #endif
 #define BELENNAVAFINAL_LevelOut_generated_h
 
 #define BelenNavaFinal_Source_BelenNavaFinal_LevelOut_h_14_SPARSE_DATA
-#define BelenNavaFinal_Source_BelenNavaFinal_LevelOut_h_14_RPC_WRAPPERS
-#define BelenNavaFinal_Source_BelenNavaFinal_LevelOut_h_14_RPC_WRAPPERS_NO_PURE_DECLS
+#define BelenNavaFinal_Source_BelenNavaFinal_LevelOut_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlap);
+
+
+#define BelenNavaFinal_Source_BelenNavaFinal_LevelOut_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlap);
+
+
 #define BelenNavaFinal_Source_BelenNavaFinal_LevelOut_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesALevelOut(); \

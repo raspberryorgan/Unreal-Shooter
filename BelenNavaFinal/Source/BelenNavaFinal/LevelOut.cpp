@@ -23,10 +23,23 @@ void ALevelOut::BeginPlay()
 
 	 if (character) {
 
-		 player = character->GetOwner();
+		 playerActor = character->GetOwner();
 
 	 }
-	
+	/*
+
+
+
+	 volume->SetupAttachment(RootComponent);
+	 volume->SetGenerateOverlapEvents(true);
+	 volume->SetCollisionResponseToAllChannels(ECR_Overlap);
+	 volume->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+	 volume->SetCollisionProfileName("Pawn");
+
+	 volume->OnComponentBeginOverlap.AddDynamic(this, &ALevelOut::OnOverlap);
+	 volume->OnComponentEndOverlap.AddDynamic(this, &ALevelOut::OnExitOverlap);
+
+	*/
 }
 
 // Called every frame
@@ -34,10 +47,12 @@ void ALevelOut::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-	volume->on
 }
 
-void ALevelOut::OnOverlap() {
+void ALevelOut::OnOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
+	
+}
+void ALevelOut::OnExitOverlap(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) {
 
 }
 

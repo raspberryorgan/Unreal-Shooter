@@ -31,6 +31,8 @@ public:
 		FString mainmenuname;
 	UPROPERTY(EditAnywhere)
 		FString level1name;
+	UPROPERTY(EditAnywhere)
+		FString level2name;
 
 	UPROPERTY(EditAnywhere)
 		FString currentLevelName;

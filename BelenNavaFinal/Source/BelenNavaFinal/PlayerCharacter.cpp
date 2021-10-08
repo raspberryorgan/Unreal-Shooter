@@ -18,6 +18,14 @@ void APlayerCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	life = 100;
+	if (GetWorld()->GetMapName() != "UEDPIE_0_Menu") {
+
+		AMyPlayerController* controller = Cast<AMyPlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
+		if (controller) {
+			controller->gameWidget->life = life;
+
+	}
+	}
 	
 }
 
@@ -25,6 +33,8 @@ void APlayerCharacter::BeginPlay()
 void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+
 
 }
 

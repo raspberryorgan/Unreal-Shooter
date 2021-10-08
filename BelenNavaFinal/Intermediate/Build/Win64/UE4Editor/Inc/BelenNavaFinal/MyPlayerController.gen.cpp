@@ -59,6 +59,10 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_level1name;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_level2name_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_level2name;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_currentLevelName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStrPropertyParams NewProp_currentLevelName;
@@ -123,6 +127,13 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 #endif
 	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level1name = { "level1name", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayerController, level1name), METADATA_PARAMS(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level1name_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level1name_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level2name_MetaData[] = {
+		{ "Category", "MyPlayerController" },
+		{ "ModuleRelativePath", "MyPlayerController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level2name = { "level2name", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyPlayerController, level2name), METADATA_PARAMS(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level2name_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level2name_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPlayerController_Statics::NewProp_currentLevelName_MetaData[] = {
 		{ "Category", "MyPlayerController" },
 		{ "ModuleRelativePath", "MyPlayerController.h" },
@@ -136,6 +147,7 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_gameWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_mainmenuname,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level1name,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_level2name,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyPlayerController_Statics::NewProp_currentLevelName,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyPlayerController_Statics::StaticCppClassTypeInfo = {
@@ -165,7 +177,7 @@ void EmptyLinkFunctionForGeneratedCodeMyPlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyPlayerController, 3897276553);
+	IMPLEMENT_CLASS(AMyPlayerController, 877270150);
 	template<> BELENNAVAFINAL_API UClass* StaticClass<AMyPlayerController>()
 	{
 		return AMyPlayerController::StaticClass();
