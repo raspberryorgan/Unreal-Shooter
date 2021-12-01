@@ -15,7 +15,7 @@ AShootingNPC::AShootingNPC()
 void AShootingNPC::BeginPlay()
 {
 	Super::BeginPlay();
-	life = 100;
+	npcLife = 100;
 	
 }
 

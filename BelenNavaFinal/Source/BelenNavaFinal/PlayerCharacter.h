@@ -60,4 +60,8 @@ public:
 	UPROPERTY(EditAnywhere)
 		float damage;
 
+	bool bIsSpeedy;
+
+	float timer;
+
 };

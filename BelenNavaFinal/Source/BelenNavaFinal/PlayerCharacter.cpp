@@ -33,6 +33,12 @@ void APlayerCharacter::BeginPlay()
 void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	if (bIsSpeedy) {
+		timer = GetWorld()->GetDeltaSeconds();
+		if (timer > 5) {
+			bIsSpeedy = false;
+		}
+	}
 
 
 
@@ -55,12 +61,25 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 	void APlayerCharacter::Front(float v)
 	{
-		AddMovementInput(GetActorForwardVector(), -v);
+		if (bIsSpeedy) {
+		AddMovementInput(GetActorForwardVector(), -v * 2);
+
+		}
+		else {
+			AddMovementInput(GetActorForwardVector(), -v);
+		}
 	}
 
 	void APlayerCharacter::Right(float h)
 	{
-		AddMovementInput(GetActorRightVector(), -h);
+		if (bIsSpeedy) {
+			AddMovementInput(GetActorRightVector(), -h * 2);
+
+		}
+		else {
+			AddMovementInput(GetActorRightVector(), -h);
+		}
+
 	}
 
 	void APlayerCharacter::RotateX(float r)
