@@ -230,8 +230,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Inc\BelenNavaFinal"
-/I "C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Source"
+/I "D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Inc\BelenNavaFinal"
+/I "D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Source"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -261,12 +261,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Inc\BelenNavaFinal\BelenNavaFinal.init.gen.cpp"
-/FI"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\Definitions.BelenNavaFinal.h"
-/Fo"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\BelenNavaFinal.init.gen.cpp.obj"
+/FI"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Inc\BelenNavaFinal\BelenNavaFinal.init.gen.cpp"
+/FI"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\Definitions.BelenNavaFinal.h"
+/Fo"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\UE4Editor\Development\BelenNavaFinal\BelenNavaFinal.init.gen.cpp.obj"
 /TP
 /GR-
 /W4

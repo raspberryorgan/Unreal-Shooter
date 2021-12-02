@@ -259,11 +259,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/I "C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine"
-/Yc"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
-/Fo"C:\Users\belen\Documents\Unreal Projects\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/I "D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine"
+/Yc"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+/Fo"D:\Documentos\5to cuatrimeste\Unreal-Shooter\BelenNavaFinal\Intermediate\Build\Win64\BelenNavaFinalEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\BelenNavaFinal.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{01C0917E-ECA0-46E2-80CB-01966406E9E3}</UniqueIdentifier>
+      <UniqueIdentifier>{3D2E4DED-F7E4-4E3F-8BFA-8BC0D1E6526F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BelenNavaFinal.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FECC36DC-6A18-4173-9EA6-0E8D5E43F8FE}</UniqueIdentifier>
+      <UniqueIdentifier>{EDFF18F2-DF02-4A06-8971-80E162450589}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\BelenNavaFinal">
-      <UniqueIdentifier>{72E0AFCA-DA03-4A6E-9AFE-0FE28DC3B53E}</UniqueIdentifier>
+      <UniqueIdentifier>{AD879BE0-BE93-48C6-A5BC-686E086B26AA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\BelenNavaFinal\BelenNavaFinal.Build.cs">
       <Filter>Source\BelenNavaFinal</Filter>
@@ -78,6 +78,12 @@
       <Filter>Source\BelenNavaFinal</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\BelenNavaFinal\ShootingNPC.h">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\BelenNavaFinal\SpeedBuff.cpp">
+      <Filter>Source\BelenNavaFinal</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\BelenNavaFinal\SpeedBuff.h">
       <Filter>Source\BelenNavaFinal</Filter>
     </ClInclude>
   </ItemGroup>

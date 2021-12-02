@@ -34,14 +34,13 @@ void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	if (bIsSpeedy) {
-		timer = GetWorld()->GetDeltaSeconds();
-		if (timer > 5) {
+		timer += GetWorld()->DeltaTimeSeconds;
+		if (timer > 30) {
+			timer = 0;
+			GetCharacterMovement()->MaxWalkSpeed = 600;
 			bIsSpeedy = false;
 		}
 	}
-
-
-
 }
 
 // Called to bind functionality to input
@@ -62,7 +61,8 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	void APlayerCharacter::Front(float v)
 	{
 		if (bIsSpeedy) {
-		AddMovementInput(GetActorForwardVector(), -v * 2);
+			GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Yellow, TEXT("Speedy"));
+		AddMovementInput(GetActorForwardVector(), -v );
 
 		}
 		else {
@@ -73,7 +73,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	void APlayerCharacter::Right(float h)
 	{
 		if (bIsSpeedy) {
-			AddMovementInput(GetActorRightVector(), -h * 2);
+			AddMovementInput(GetActorRightVector(), -h );
 
 		}
 		else {

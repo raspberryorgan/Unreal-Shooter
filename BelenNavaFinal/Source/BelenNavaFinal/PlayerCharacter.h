@@ -61,7 +61,7 @@ public:
 		float damage;
 
 	bool bIsSpeedy;
-
+	UPROPERTY(EditAnywhere)
 	float timer;
 
 };
